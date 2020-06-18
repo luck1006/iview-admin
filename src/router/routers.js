@@ -17,16 +17,16 @@ import Main from '@/components/main'
  * }
  */
 
+// export default [{
+//   path: '/login',
+//   name: 'login',
+//   meta: {
+//     title: 'Login - 登录',
+//     hideInMenu: true
+//   },
+//   component: () => import('@/view/login/login.vue')
+// },
 export default [{
-  path: '/login',
-  name: 'login',
-  meta: {
-    title: 'Login - 登录',
-    hideInMenu: true
-  },
-  component: () => import('@/view/login/login.vue')
-},
-{
   path: '/',
   name: '_home',
   redirect: '/home',
@@ -192,23 +192,23 @@ export default [{
     component: () => import('@/view/wyvideo')
   }]
 },
-  // {
-  //   path: '/timeworking',
-  //   name: 'timeworking',
-  //   component: Main,
-  //   meta: {
-  //     hideInBread: true
-  //   },
-  //   children: [{
-  //     path: '',
-  //     name: 'timeworking',
-  //     meta: {
-  //       icon: 'md-cog',
-  //       title: '资本化工时'
-  //     },
-  //     component: () => import('@/view/timeworking')
-  //   }]
-  // },
+// {
+//   path: '/timeworking',
+//   name: 'timeworking',
+//   component: Main,
+//   meta: {
+//     hideInBread: true
+//   },
+//   children: [{
+//     path: '',
+//     name: 'timeworking',
+//     meta: {
+//       icon: 'md-cog',
+//       title: '资本化工时'
+//     },
+//     component: () => import('@/view/timeworking')
+//   }]
+// },
 {
   path: '/orderLoginReport',
   name: 'orderLoginReport',
@@ -287,16 +287,16 @@ export default [{
   }]
 },
 
-  // {
-  //   path: '/getXmind',
-  //   name: 'getXmind',
-  //   meta: {
-  //     hideInMenu: true,
-  //     title: '需求脑图'
-  //     // breadcrumb: false
-  //   },
-  //   component: () => import('@/view/xmind')
-  // },
+// {
+//   path: '/getXmind',
+//   name: 'getXmind',
+//   meta: {
+//     hideInMenu: true,
+//     title: '需求脑图'
+//     // breadcrumb: false
+//   },
+//   component: () => import('@/view/xmind')
+// },
 
 {
   path: '/PenetrationTest',
@@ -398,42 +398,42 @@ export default [{
   }]
 },
 
-  //   // 打包资源技术支持统计
-  // {
-  //   path: '/getPackageData',
-  //   name: 'getPackageData',
-  //   component: Main,
-  //   meta: {
-  //     hideInBread: true
-  //   },
-  //   children: [{
-  //     path: '',
-  //     name: 'getPackageData',
-  //     meta: {
-  //       icon: 'md-cart',
-  //       title: '打包订资源和订单趋势图'
-  //     },
-  //     component: () => import('@/view/PackageRate/index.vue')
-  //   }]
-  // },
+//   // 打包资源技术支持统计
+// {
+//   path: '/getPackageData',
+//   name: 'getPackageData',
+//   component: Main,
+//   meta: {
+//     hideInBread: true
+//   },
+//   children: [{
+//     path: '',
+//     name: 'getPackageData',
+//     meta: {
+//       icon: 'md-cart',
+//       title: '打包订资源和订单趋势图'
+//     },
+//     component: () => import('@/view/PackageRate/index.vue')
+//   }]
+// },
 
-  // {
-  //   path: '/getForeignPackageData',
-  //   name: 'getForeignPackageData',
-  //   component: Main,
-  //   meta: {
-  //     hideInBread: true
-  //   },
-  //   children: [{
-  //     path: '',
-  //     name: 'getForeignPackageData',
-  //     meta: {
-  //       icon: 'md-cart',
-  //       title: '境外打包订资源和订单趋势图'
-  //     },
-  //     component: () => import('@/view/PackageRate/ForeignResource.vue')
-  //   }]
-  // },
+// {
+//   path: '/getForeignPackageData',
+//   name: 'getForeignPackageData',
+//   component: Main,
+//   meta: {
+//     hideInBread: true
+//   },
+//   children: [{
+//     path: '',
+//     name: 'getForeignPackageData',
+//     meta: {
+//       icon: 'md-cart',
+//       title: '境外打包订资源和订单趋势图'
+//     },
+//     component: () => import('@/view/PackageRate/ForeignResource.vue')
+//   }]
+// },
 
 {
   path: '/getresource',
@@ -472,7 +472,7 @@ export default [{
     component: () => import('@/view/report/reportdetail.vue')
   }]
 },
-  // 迭代进度报告
+// 迭代进度报告
 {
   path: '/sprintReport',
   name: '_sprintReport',
@@ -490,7 +490,7 @@ export default [{
     component: () => import('@/view/sprintReport')
   }]
 },
-  // 燃尽图
+// 燃尽图
 {
   path: '/burndownChart',
   name: 'burndownChart',
@@ -508,7 +508,7 @@ export default [{
     component: () => import('@/view/burndownchart')
   }]
 },
-  // 统计分析
+// 统计分析
 {
   path: '/analysis',
   name: 'analysis',
@@ -543,4 +543,5 @@ export default [{
     },
     component: () => import('@/view/timeworking')
   }]
-}]
+}
+]
